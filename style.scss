@@ -191,7 +191,7 @@ html, body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 50px 120px;
+        padding: 50px 120px 30px 120px;
 
         h3{
             color: $text_col;
@@ -227,7 +227,16 @@ html, body{
                 &:hover{
                     background: #f0c0c0;
                 }
+
+                &:focus{
+                    outline: none;
+                }
             }
+        }
+        p.info{
+            visibility: hidden;
+            color: #f0c0c0;
+            font-size: 16px;
         }
     }
     /*Slajder*/
