@@ -233,7 +233,7 @@ html section.newsletter, body section.newsletter {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px 120px;
+  padding: 50px 120px 30px 120px;
 }
 
 html section.newsletter h3, body section.newsletter h3 {
@@ -291,6 +291,16 @@ html section.newsletter form.newsletter button:hover, body section.newsletter fo
 
 html section.newsletter form.newsletter button:hover, body section.newsletter form.newsletter button:hover {
   background: #f0c0c0;
+}
+
+html section.newsletter form.newsletter button:focus, body section.newsletter form.newsletter button:focus {
+  outline: none;
+}
+
+html section.newsletter p.info, body section.newsletter p.info {
+  visibility: hidden;
+  color: #f0c0c0;
+  font-size: 16px;
 }
 
 html section.slajder, body section.slajder {
