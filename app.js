@@ -28,4 +28,34 @@ newsletterBtn.addEventListener("click", (e) => {
     }
 });
 
+// Slajder
+    const photos = document.querySelector(".slajder .gallery ul");
+    const leftArrow = document.querySelector(".leftArrow");
+    const rightArrow = document.querySelector(".rightArrow");
+    const slideWidth = document.querySelectorAll(".slajder .gallery ul li")[0].clientWidth;
+    const slides = document.querySelectorAll(".slajder .gallery ul li").length;
+    
+    let left = 0;
+    let count = 1;
+
+    function skip(side){
+        
+        if (side === "left"){
+            count --;
+            if (count < 1) count = slides;
+            left = (count-1) * (-slideWidth);
+
+        } else if (side === "right"){
+            count ++;
+            if (count > slides) count = 1;
+            left = (count-1) * (-slideWidth);
+        }
+
+        photos.style.left = `${left}px`;
+    }
+
+    leftArrow.addEventListener("click", function(){skip("left")});
+    rightArrow.addEventListener("click", function(){ skip("right")});
+
+    setInterval(() => {skip("right");}, 2000);
 });
