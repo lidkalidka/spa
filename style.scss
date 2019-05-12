@@ -1,4 +1,3 @@
-//$text_col:#f9eeee;
 $text_col:#faf5f0;
 
 @mixin button {
@@ -35,7 +34,6 @@ html, body{
             padding: 0;
 
             li{
-
                 a{
                     margin: 10px 30px;
                     text-decoration: none;
@@ -51,6 +49,31 @@ html, body{
                 &.active{
                     font-weight: 600;
                     letter-spacing: 1px;
+                }
+
+                ul {
+                    list-style-type: none;
+                    position: absolute;
+                    padding: 0;
+                    margin: 0;
+                    width: 200px;
+                    background: $text_col;
+                    color: #6f2f2f;
+                    width: 200px;
+                    display: none;
+
+                    li{
+                        padding: 10px;
+                        cursor: pointer;
+                        border-bottom: .5px dotted #6f2f2f;
+
+                        &:hover{
+                            background: #f0c0c0;
+                        }
+                    }
+                }
+                &:hover ul{
+                    display: block;
                 }
             }
         }
@@ -140,7 +163,7 @@ html, body{
     /*Offer*/
     section.offer{
         display: flex;
-        padding: 100px 120px;
+        padding: 80px 120px;
         justify-content: space-between;
         align-items: center;
 
