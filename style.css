@@ -358,7 +358,7 @@ html section.slajder div.gallery ul, body section.slajder div.gallery ul {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  left: -1650px;
+  left: 0;
 }
 
 html section.slajder div.gallery ul li, body section.slajder div.gallery ul li {
@@ -367,6 +367,7 @@ html section.slajder div.gallery ul li, body section.slajder div.gallery ul li {
 
 html section.slajder div.gallery ul li img, body section.slajder div.gallery ul li img {
   width: 550px;
+  height: auto;
   border: none;
   border-radius: 5px;
 }

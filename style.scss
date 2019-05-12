@@ -285,12 +285,13 @@ html, body{
                 height:400px;
                 display: flex;
                 position: relative;
-                left: -1650px; 
+                left: 0; 
     
                 li{
                     padding: 0;
                     img{
                         width:550px;
+                        height: auto;
                         border: none;
                         border-radius: 5px;
                     }
