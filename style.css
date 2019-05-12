@@ -203,6 +203,10 @@ html section.offer figure p:first-of-type, body section.offer figure p:first-of-
   margin-top: 20px;
 }
 
+html section.offer figure p.additional-paragraph, body section.offer figure p.additional-paragraph {
+  display: none;
+}
+
 html section.offer figure button.more-less-btn, body section.offer figure button.more-less-btn {
   background: #652121;
   cursor: pointer;
@@ -216,6 +220,10 @@ html section.offer figure button.more-less-btn, body section.offer figure button
 
 html section.offer figure button.more-less-btn:hover, body section.offer figure button.more-less-btn:hover {
   background: #6f2f2f;
+}
+
+html section.offer figure button.more-less-btn:focus, body section.offer figure button.more-less-btn:focus {
+  outline: none;
 }
 
 html section.newsletter, body section.newsletter {

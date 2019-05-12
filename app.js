@@ -58,4 +58,22 @@ newsletterBtn.addEventListener("click", (e) => {
     rightArrow.addEventListener("click", function(){ skip("right")});
 
     setInterval(() => {skip("right");}, 2000);
+
+/* more/less button*/
+    const moreLessBtns = document.querySelectorAll(".more-less-btn");
+
+    function moreLess(){
+        if (this.previousElementSibling.style.display === "none" || this.previousElementSibling.style.display === "") {
+            this.previousElementSibling.style.display = "block";
+            this.textContent = "Czytaj mniej";
+        } else {
+            this.previousElementSibling.style.display = "none";
+            this.textContent = "Zobacz więcej";
+        }
+    }
+
+    for (btn of moreLessBtns){
+        btn.addEventListener("click", moreLess);
+    }
+
 });
