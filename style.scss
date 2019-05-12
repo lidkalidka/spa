@@ -177,10 +177,18 @@ html, body{
                 &:first-of-type{
                     margin-top: 20px;
                 }
+
+                &.additional-paragraph{
+                    display: none;
+                }
             }
 
             button.more-less-btn{
                 @include button;
+
+                &:focus{
+                    outline: none;
+                }
             }
         }
     }
