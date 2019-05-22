@@ -76,4 +76,19 @@ newsletterBtn.addEventListener("click", (e) => {
         btn.addEventListener("click", moreLess);
     }
 
+/*nested menu*/
+
+const aboutUsLi = document.querySelectorAll("nav > li");
+    
+    aboutUsLi.forEach(el => el.addEventListener("mouseover", function(){
+        const ul = this.querySelector("ul");
+        
+        if (ul) { 
+            ul.style.display = "block";
+            [ul, ul.closest("li")].forEach( el => addEventListener("mouseout", function(){
+                ul.style.display = "none";
+            }));
+        }
+    }));
+
 });

@@ -67,10 +67,6 @@ html header nav li ul li:hover, body header nav li ul li:hover {
   background: #f0c0c0;
 }
 
-html header nav li:hover ul, body header nav li:hover ul {
-  display: block;
-}
-
 html section.banner, body section.banner {
   height: 500px;
   background-image: url("robocze/wood.jpg");
